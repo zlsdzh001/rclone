@@ -2,6 +2,8 @@ module github.com/rclone/rclone
 
 go 1.17
 
+replace bazil.org/fuse v0.0.0-20200524192727-fb710f7dfd05 => github.com/ncw/fuse v0.0.0-20220325150332-04d41639d77a
+
 require (
 	bazil.org/fuse v0.0.0-20200524192727-fb710f7dfd05
 	github.com/Azure/azure-pipeline-go v0.2.3
