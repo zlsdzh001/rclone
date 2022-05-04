@@ -2456,7 +2456,7 @@ func (f *Fs) list(ctx context.Context, bucket, directory, prefix string, addBuck
 		directory += "/"
 	}
 	delimiter := ""
-	if !recurse {
+	if !recurse || f.name == "ctyun" {
 		delimiter = "/"
 	}
 	var continuationToken, startAfter *string
